@@ -7,7 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @MapperScan("com.example.webbackendexperiment2.Mapper")
 public class WebBackEndExperiment2Application {
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         SpringApplication.run(WebBackEndExperiment2Application.class, args);
     }
 
