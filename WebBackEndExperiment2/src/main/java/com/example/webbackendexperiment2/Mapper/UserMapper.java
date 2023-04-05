@@ -1,7 +1,7 @@
 package com.example.webbackendexperiment2.Mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.example.webbackendexperiment2.Model.User;
+import com.example.webbackendexperiment2.Entity.User;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
 
@@ -13,6 +13,13 @@ public interface UserMapper extends BaseMapper<User>
 {
     @Select("SELECT * FROM user")
     List<User> findAllUsers();
+
+    @Select("SELECT * FROM user where id=${id}")
+    User selectById(@Param("id")int id);
+
+    @Select("SELECT * FROM user where username='${username}'")
+    User selectByUserName(@Param("username")String username);
+
     @Insert({"insert into `user`(username,password) values(#{username},#{password})"})
     int insertUser(User user);
 

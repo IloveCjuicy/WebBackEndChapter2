@@ -2,11 +2,10 @@ package com.example.webbackendexperiment2.Cotroller;
 
 import com.example.webbackendexperiment2.Mapper.GoodMapper;
 import com.example.webbackendexperiment2.Mapper.UserMapper;
-import com.example.webbackendexperiment2.Model.Good;
-import com.example.webbackendexperiment2.Model.User;
+import com.example.webbackendexperiment2.Entity.Good;
+import com.example.webbackendexperiment2.Entity.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 

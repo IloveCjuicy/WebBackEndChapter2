@@ -1,7 +1,7 @@
 package com.example.webbackendexperiment2.Mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.example.webbackendexperiment2.Model.Good;
+import com.example.webbackendexperiment2.Entity.Good;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
 
