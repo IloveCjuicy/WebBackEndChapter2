@@ -1,10 +1,14 @@
 package com.example.webbackendexperiment2.Entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
+import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Data;
 
+import java.io.Serializable;
+
 @Data
-public class User
+@Schema
+public class User implements Serializable
 {
     @TableId(value = "id")
     private Object id;
