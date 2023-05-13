@@ -11,6 +11,8 @@ import java.util.List;
 @Mapper
 public interface GoodMapper extends BaseMapper<Good>
 {
+    @Select("SELECT * FROM good where id=${id}")
+    Good findById(@Param("id")Integer id);
     @Select("SELECT * FROM good")
     List<Good> findAllGoods();
     @Insert({"insert into good(goodname,price,stock) values(${goodname},${price},${stock})"})
